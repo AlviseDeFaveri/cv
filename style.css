@@ -117,6 +117,7 @@ a:hover {
     color: #cf8a05;
 }
 
+
 section {
 	border-top: 1px solid #dedede;
 	padding: 20px 0 0;
@@ -149,7 +150,7 @@ section:last-child {
 
 .sectionContent h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	margin-bottom: -2px;
     font-weight: 700;
     color: #cf8a05;
@@ -160,6 +161,7 @@ section:last-child {
     font-size: 1.1em;
     margin-bottom: -2px;
     font-weight: 700;
+    color: #444;
 }
 
 .subDetails {
@@ -169,9 +171,9 @@ section:last-child {
 }
 
 #skillz {
-    -webkit-columns: 3 100px;
-    -moz-columns: 3 100px;
-    columns: 3 100px;
+    -webkit-columns: 4 100px;
+    -moz-columns: 4 100px;
+    columns: 4 100px;
     margin-bottom: 10px;
 }
 
@@ -194,6 +196,20 @@ section:last-child {
 .keySkills li {
     margin-bottom: 3px;
     margin-left: 20px;
+}
+
+/* Style buttons */
+.btn {
+  background-color: lightgrey;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #cf8a05;
 }
 
 @media all and (min-width: 602px) and (max-width: 800px) {
@@ -252,6 +268,22 @@ section:last-child {
 @media print {
     #cv {
         width: 100%;
+        margin: 0px;
+    }
+
+    .noprint {
+        visibility: hidden;
+        display: none;
+    }
+
+    .sectionTitle {
+    float: left;
+    width: 20%;
+    }
+
+    .sectionContent {
+        float: right;
+        width: 79%;
     }
 }
 
