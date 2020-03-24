@@ -18,7 +18,7 @@ html, body {background: #ededed; font-family: 'Lato', helvetica, arial, sans-ser
 p {
 	font-size: 0.9em;
 	line-height: 1.4em;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	color: #444;
 }
 
@@ -120,7 +120,7 @@ a:hover {
 
 section {
 	border-top: 1px solid #dedede;
-	padding: 20px 0 0;
+	padding: 30px 0 0;
 }
 
 section:first-child {
@@ -200,16 +200,32 @@ section:last-child {
 
 /* Style buttons */
 .btn {
-  background-color: lightgrey;
+  background-color: #aaa;
   border: none;
   color: white;
   padding: 10px 15px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
 /* Darker background on mouse-over */
 .btn:hover {
   background-color: #cf8a05;
+}
+
+.lastmod {
+    padding-top: 30px;
+    margin-bottom:5px;
+    color:#777;
+    font-style: italic;
+}
+
+.footer {
+    padding-top: 30px;
+    margin-bottom:5px;
+    text-align: center;
+    color:#777;
+    font-style: italic;
 }
 
 @media all and (min-width: 602px) and (max-width: 800px) {
@@ -271,6 +287,14 @@ section:last-child {
         margin: 0px;
     }
 
+    p {
+        margin-bottom: 20px;
+    }
+
+    section {
+        padding:20px 0 0;
+    }
+
     .noprint {
         visibility: hidden;
         display: none;
@@ -288,64 +312,122 @@ section:last-child {
 }
 
 @-webkit-keyframes reset {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @-webkit-keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-moz-keyframes reset {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @-moz-keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes reset {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	40% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.instaFade {
+    -webkit-animation-name: reset, fade-in;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in;
+
+    -moz-animation-name: reset, fade-in;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-timing-function: ease-in;
+
+    animation-name: reset, fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+.quickFade {
+    -webkit-animation-name: reset, fade-in;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-timing-function: ease-in;
+
+    -moz-animation-name: reset, fade-in;
+    -moz-animation-duration: 2.5s;
+    -moz-animation-timing-function: ease-in;
+
+    animation-name: reset, fade-in;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in;
+}
+
+.delayOne {
+    -webkit-animation-delay: 0, .5s;
+    -moz-animation-delay: 0, .5s;
+    animation-delay: 0, .5s;
+}
+
+.delayTwo {
+    -webkit-animation-delay: 0, 1s;
+    -moz-animation-delay: 0, 1s;
+    animation-delay: 0, 1s;
+}
+
+.delayThree {
+    -webkit-animation-delay: 0, 1.5s;
+    -moz-animation-delay: 0, 1.5s;
+    animation-delay: 0, 1.5s;
+}
+
+.delayFour {
+    -webkit-animation-delay: 0, 2s;
+    -moz-animation-delay: 0, 2s;
+    animation-delay: 0, 2s;
+}
+
+.delayFive {
+    -webkit-animation-delay: 0, 2.5s;
+    -moz-animation-delay: 0, 2.5s;
+    animation-delay: 0, 2.5s;
 }

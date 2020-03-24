@@ -16,19 +16,18 @@
 <body id="top">
 <div id="cv" class="instaFade">
     <div class="mainDetails">
-        <div id="headshot" class="quickFade">
+        <div id="headshot" class="instafade">
             <img src="img/pic.jpeg" alt="Photo" />
         </div>
 
         <div id="name">
-            <h1 class="quickFade delayTwo">Alvise de Faveri Tron</h1>
-            <h2 class="quickFade delayThree">Computer Science and Engineering<br/> MSc student</h2>
-            <form  class="noprint" method="get" action="AlviseDeFaveri_CV.pdf">
-               <button class="btn"><i class="fa fa-download"></i> Download PDF version</button>
-            </form>
+            <h1 class="instafade delayTwo">Alvise de Faveri Tron</h1>
+            <h2 class="instafade delayThree">Computer Science and Engineering<br/> MSc student</h2>
+
+            <p class="noprint lastmod instafade delayThree">Last modified on <span id="date"></span>.</p>
         </div>
 
-        <div id="contactDetails" class="quickFade delayFour">
+        <div id="contactDetails" class="instafade delayFour">
             <ul>
                 <li><i class="fas fa-envelope"></i>
                     <a href="mailto:elviside@gmail.com" target="_blank">elviside@gmail.com</a>
@@ -42,11 +41,14 @@
                 </li>
                 <!--li><i class="fas fa-phone"></i> +39 345 227 5357</li-->
             </ul>
+            <form  class="noprint" method="get" action="AlviseDeFaveri_CV.pdf">
+               <button class="btn"><i class="fa fa-download"></i> Download PDF version</button>
+            </form>
         </div>
         <div class="clear"></div>
     </div>
 
-    <div id="mainArea" class="quickFade delayFive">
+    <div id="mainArea" class="instafade delayFive">
         <section>
             <article>
                 <div class="sectionTitle">
@@ -254,7 +256,29 @@
             <div class="clear"></div>
         </section>
 
+         <p class="noprint footer quickFade delayThree">Hosted with<i id="randomicon"></i>on Github</p>
     </div>
 </div>
+
 </body>
+
+<script>
+    const d = new Date(document.lastModified)
+    const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d)
+    const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(d)
+    const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d)
+document.getElementById("date").innerHTML = mo + ' ' + da +', ' + ye;
+
+ var iconArray = new Array("fa-ad","fa-address-book","fa-address-card","fa-adjust","fa-air-freshener","fa-align-center","fa-align-justify","fa-align-left","fa-align-right","fa-allergies","fa-ambulance","fa-american-sign-language-interpreting","fa-anchor","fa-angle-double-down","fa-angle-double-left","fa-angle-double-right","fa-angle-double-up","fa-angle-down","fa-angle-left","fa-angle-right","fa-angle-up","fa-angry","fa-ankh","fa-apple-alt","fa-archive","fa-archway","fa-arrow-alt-circle-down","fa-arrow-alt-circle-left","fa-arrow-alt-circle-right","fa-arrow-alt-circle-up","fa-arrow-circle-down","fa-arrow-circle-left","fa-arrow-circle-right","fa-arrow-circle-up","fa-arrow-down","fa-arrow-left","fa-arrow-right","fa-arrow-up","fa-arrows-alt","fa-arrows-alt-h","fa-arrows-alt-v","fa-assistive-listening-systems","fa-asterisk","fa-at","fa-atlas","fa-atom","fa-audio-description","fa-award","fa-baby","fa-baby-carriage","fa-backspace","fa-backward","fa-bacon","fa-balance-scale","fa-balance-scale-left","fa-balance-scale-right","fa-ban","fa-band-aid","fa-barcode","fa-bars","fa-baseball-ball","fa-basketball-ball","fa-bath","fa-battery-empty","fa-battery-full","fa-battery-half","fa-battery-quarter","fa-battery-three-quarters","fa-bed","fa-beer","fa-bell","fa-bell-slash","fa-bezier-curve","fa-bible","fa-bicycle","fa-biking","fa-binoculars","fa-biohazard","fa-birthday-cake","fa-blender","fa-blender-phone","fa-blind","fa-blog","fa-bold","fa-bolt","fa-bomb","fa-bone","fa-bong","fa-book","fa-book-dead","fa-book-medical","fa-book-open","fa-book-reader","fa-bookmark","fa-border-all","fa-border-none","fa-border-style","fa-bowling-ball","fa-box","fa-box-open","fa-boxes","fa-braille","fa-brain","fa-bread-slice","fa-briefcase","fa-briefcase-medical","fa-broadcast-tower","fa-broom","fa-brush","fa-bug","fa-building","fa-bullhorn","fa-bullseye","fa-burn","fa-bus","fa-bus-alt","fa-business-time","fa-calculator","fa-calendar","fa-calendar-alt","fa-calendar-check","fa-calendar-day","fa-calendar-minus","fa-calendar-plus","fa-calendar-times","fa-calendar-week","fa-camera","fa-camera-retro","fa-campground","fa-candy-cane","fa-cannabis","fa-capsules","fa-car","fa-car-alt","fa-car-battery","fa-car-crash","fa-car-side","fa-caret-down","fa-caret-left","fa-caret-right","fa-caret-square-down","fa-caret-square-left","fa-caret-square-right","fa-caret-square-up","fa-caret-up","fa-carrot","fa-cart-arrow-down","fa-cart-plus","fa-cash-register","fa-cat","fa-certificate","fa-chair","fa-chalkboard","fa-chalkboard-teacher","fa-charging-station","fa-chart-area","fa-chart-bar","fa-chart-line","fa-chart-pie","fa-check","fa-check-circle","fa-check-double","fa-check-square","fa-cheese","fa-chess","fa-chess-bishop","fa-chess-board","fa-chess-king","fa-chess-knight","fa-chess-pawn","fa-chess-queen","fa-chess-rook","fa-chevron-circle-down","fa-chevron-circle-left","fa-chevron-circle-right","fa-chevron-circle-up","fa-chevron-down","fa-chevron-left","fa-chevron-right","fa-chevron-up","fa-child","fa-church","fa-circle","fa-circle-notch","fa-city","fa-clinic-medical","fa-clipboard","fa-clipboard-check","fa-clipboard-list","fa-clock","fa-clone","fa-closed-captioning","fa-cloud","fa-cloud-download-alt","fa-cloud-meatball","fa-cloud-moon","fa-cloud-moon-rain","fa-cloud-rain","fa-cloud-showers-heavy","fa-cloud-sun","fa-cloud-sun-rain","fa-cloud-upload-alt","fa-cocktail","fa-code","fa-code-branch","fa-coffee","fa-cog","fa-cogs","fa-coins","fa-columns","fa-comment","fa-comment-alt","fa-comment-dollar","fa-comment-dots","fa-comment-medical","fa-comment-slash","fa-comments","fa-comments-dollar","fa-compact-disc","fa-compass","fa-compress","fa-compress-arrows-alt","fa-concierge-bell","fa-cookie","fa-cookie-bite","fa-copy","fa-copyright","fa-couch","fa-credit-card","fa-crop","fa-crop-alt","fa-cross","fa-crosshairs","fa-crow","fa-crown","fa-crutch","fa-cube","fa-cubes","fa-cut","fa-database","fa-deaf","fa-democrat","fa-desktop","fa-dharmachakra","fa-diagnoses","fa-dice","fa-dice-d20","fa-dice-d6","fa-dice-five","fa-dice-four","fa-dice-one","fa-dice-six","fa-dice-three","fa-dice-two","fa-digital-tachograph","fa-directions","fa-divide","fa-dizzy","fa-dna","fa-dog","fa-dollar-sign","fa-dolly","fa-dolly-flatbed","fa-donate","fa-door-closed","fa-door-open","fa-dot-circle","fa-dove","fa-download","fa-drafting-compass","fa-dragon","fa-draw-polygon","fa-drum","fa-drum-steelpan","fa-drumstick-bite","fa-dumbbell","fa-dumpster","fa-dumpster-fire","fa-dungeon","fa-edit","fa-egg","fa-eject","fa-ellipsis-h","fa-ellipsis-v","fa-envelope","fa-envelope-open","fa-envelope-open-text","fa-envelope-square","fa-equals","fa-eraser","fa-ethernet","fa-euro-sign","fa-exchange-alt","fa-exclamation","fa-exclamation-circle","fa-exclamation-triangle","fa-expand","fa-expand-arrows-alt","fa-external-link-alt","fa-external-link-square-alt","fa-eye","fa-eye-dropper","fa-eye-slash","fa-fan","fa-fast-backward","fa-fast-forward","fa-fax","fa-feather","fa-feather-alt","fa-female","fa-fighter-jet","fa-file","fa-file-alt","fa-file-archive","fa-file-audio","fa-file-code","fa-file-contract","fa-file-csv","fa-file-download","fa-file-excel","fa-file-export","fa-file-image","fa-file-import","fa-file-invoice","fa-file-invoice-dollar","fa-file-medical","fa-file-medical-alt","fa-file-pdf","fa-file-powerpoint","fa-file-prescription","fa-file-signature","fa-file-upload","fa-file-video","fa-file-word","fa-fill","fa-fill-drip","fa-film","fa-filter","fa-fingerprint","fa-fire","fa-fire-alt","fa-fire-extinguisher","fa-first-aid","fa-fish","fa-fist-raised","fa-flag","fa-flag-checkered","fa-flag-usa","fa-flask","fa-flushed","fa-folder","fa-folder-minus","fa-folder-open","fa-folder-plus","fa-font","fa-football-ball","fa-forward","fa-frog","fa-frown","fa-frown-open","fa-funnel-dollar","fa-futbol","fa-gamepad","fa-gas-pump","fa-gavel","fa-gem","fa-genderless","fa-ghost","fa-gift","fa-gifts","fa-glass-cheers","fa-glass-martini","fa-glass-martini-alt","fa-glass-whiskey","fa-glasses","fa-globe","fa-globe-africa","fa-globe-americas","fa-globe-asia","fa-globe-europe","fa-golf-ball","fa-gopuram","fa-graduation-cap","fa-greater-than","fa-greater-than-equal","fa-grimace","fa-grin","fa-grin-alt","fa-grin-beam","fa-grin-beam-sweat","fa-grin-hearts","fa-grin-squint","fa-grin-squint-tears","fa-grin-stars","fa-grin-tears","fa-grin-tongue","fa-grin-tongue-squint","fa-grin-tongue-wink","fa-grin-wink","fa-grip-horizontal","fa-grip-lines","fa-grip-lines-vertical","fa-grip-vertical","fa-guitar","fa-h-square","fa-hamburger","fa-hammer","fa-hamsa","fa-hand-holding","fa-hand-holding-heart","fa-hand-holding-usd","fa-hand-lizard","fa-hand-middle-finger","fa-hand-paper","fa-hand-peace","fa-hand-point-down","fa-hand-point-left","fa-hand-point-right","fa-hand-point-up","fa-hand-pointer","fa-hand-rock","fa-hand-scissors","fa-hand-spock","fa-hands","fa-hands-helping","fa-handshake","fa-hanukiah","fa-hard-hat","fa-hashtag","fa-hat-wizard","fa-haykal","fa-hdd","fa-heading","fa-headphones","fa-headphones-alt","fa-headset","fa-heart","fa-heart-broken","fa-heartbeat","fa-helicopter","fa-highlighter","fa-hiking","fa-hippo","fa-history","fa-hockey-puck","fa-holly-berry","fa-home","fa-horse","fa-horse-head","fa-hospital","fa-hospital-alt","fa-hospital-symbol","fa-hot-tub","fa-hotdog","fa-hotel","fa-hourglass","fa-hourglass-end","fa-hourglass-half","fa-hourglass-start","fa-house-damage","fa-hryvnia","fa-i-cursor","fa-ice-cream","fa-icicles","fa-icons","fa-id-badge","fa-id-card","fa-id-card-alt","fa-igloo");
+
+    function changeIcon()
+    {
+        var randIcon = Math.floor(Math.random()*(iconArray.length));
+        document.getElementById("randomicon").innerHTML ="<i class='fa " + iconArray[randIcon] + "'></i>";
+    }
+
+    window.setInterval(changeIcon, 3000);
+</script>
+
+
 </html>
