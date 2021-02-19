@@ -89,6 +89,11 @@ section {
   display: block;
 }
 
+.description {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 html,
 body {
   background: #ededed;
