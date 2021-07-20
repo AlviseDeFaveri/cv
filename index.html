@@ -17,14 +17,14 @@
   <body id="top">
     <div id="cv" class="instaFade">
       <div class="mainDetails">
-        <div id="headshot" class="instafade">
+        <div id="headshot" class="instafade noprint">
           <img src="img/pic.jpeg" alt="Photo" />
         </div>
 
         <div id="name">
           <h1 class="instafade delayTwo">Alvise de' Faveri Tron</h1>
           <h2 class="instafade delayThree">
-            MSc in Computer Science and Engineering
+            MSc in Computer Engineering
           </h2>
           <p class="noprint lastmod instafade delayThree">
             Last modified on <span id="date"></span>.
@@ -75,10 +75,12 @@
 
             <div class="sectionContent">
               <p class="description">
-                I am a curious and team-working Software Engineer with a varied background and a strong interest
-                for low-level topics. My main fields of expertise are Embedded Systems,
+                I am an enthusiast and team-working Software Engineer with a varied background and a strong interest
+                for low-level topics.
+                <!-- My main fields of expertise are Embedded Systems,
                 Security and Compilers, but I also have some experience in Web Development
-                and Machine Learning. I'm always looking for challenging technical
+                and Machine Learning. -->
+                I'm always looking for challenging technical
                 problems and collaborative environments where I can learn from
                 the best.
               </p>
@@ -89,34 +91,70 @@
 
         <section>
           <div class="sectionTitle">
-            <h1>Experience</h1>
+            <h1>Education</h1>
           </div>
 
           <div class="sectionContent">
             <article>
-              <h2>Decompiler Intern<i class="fas fa-microscope noprint"></i></h2>
-              <h3><a href="https://rev.ng/">rev.ng</a></h3>
-              <p class="subDetails">September 2020 - Present</p>
+              <h2>BSc in Computer Engineering</h2>
+              <h3>Politecnico di Milano, Milano, Italy</h3>
+              <p class="subDetails">September 2013 - July 2018</p>
               <p>
-                • Worked with clang-static-analyzer to create a symbolic execution plugin
-                <br />• Working on type recovery from binaries without source code
+                First two years in the Electronics Engineering
+                course.
               </p>
-              <!-- <p class="subDetails noprint">Binary Analysis, Compilers, LLVM, C++</p> -->
-            </p>
             </article>
 
             <article>
-              <h2> Backend Developer <i class="far fa-window-restore noprint"></i></h2>
-              <h3><a href="https://www.blinklastmile.com/">blink</a></h3>
-              <p class="subDetails">April 2020 - June 2020</p>
+              <h2>Exchange Program</h2>
+              <h3>CY Tech, Cergy, France</h3>
+              <p class="subDetails">September 2019 - January 2020</p>
+              <p>Exchange Program focused on Data Analysis and Machine Learning.</p>
+            </article>
+
+            <article>
+              <h2>MSc in Computer Engineering</h2>
+              <h3>Politecnico di Milano, Milano, Italy</h3>
+              <p class="subDetails">September 2018 - Ongoing</p>
               <p>
-                • Helped setting up the software infrastructure of an early stage startup (AWS, nginx, PostgreSQL etc.)<br>
-                • Designed and developed backend components (Django)
+                Took courses on Operating Systems, Embedded Systems, 
+                IoT, Computer Architectures, Cryptography and Compilers.
               </p>
-              <!-- <p class="subDetails noprint">Django, Selenium, AWS, nginx, devops</p> -->
+            </article>
+
+            <!-- <article>
+              <h2>High School Exchange Program</h2>
+              <h3>Palm Beach Currumbin, Brisbane, Australia</h3>
+              <p class="subDetails">July 2012 - December 2012</p>
+              <p>
+                Six months Exchange Program in Australia during High School.
+              </p>
+            </article> -->
+          </div>
+          <div class="clear"></div>
+        </section>
+
+        <section>
+          <div class="sectionTitle">
+            <h1>Experience</h1>
+          </div>
+
+          <div class="sectionContent">
+            
+            <article>
+              <h2>Embedded Software Intern <i class="fas fa-satellite noprint"></i></h2>
+              <h3>OHB Italia</h3>
+              <p class="subDetails">March 218 - August 2018</p>
+              <p>
+                • Validated the on-board software of a satellite instrument.
+                <br />• Developed the firmware for the interference mitigation
+                module.
+              </p>
+              <!-- <p class="subDetails noprint">SPARC, C, IBM Rational, IBM Doors, Cantata, MISRA</p> -->
             </p>
             </article>
 
+            
             <article>
               <h2>Software Team Lead <i class="fas fa-rocket noprint"></i></h2>
               <h3>
@@ -126,30 +164,44 @@
               </h3>
               <p class="subDetails">October 2017 - September 2020</p>
               <p>
-                • Rocket software design and development (STM32 MCU, custom RTOS)
+                <!-- • Rocket software design and development (STM32 MCU, custom RTOS) -->
                 <!--<br/>• Telemetry module development (Mavlink) and Ignition Board safety-critical software -->
                 <!-- <br />• Improved documentation and software quality processes -->
-                <br />• Coordinated all on-board and on-ground software development (Ground Station, On-Board Software, Control Algorithms)
-                <br />• 2 launch campaigns, ~1km apogee reached
+                • Designed and developed the Hermes rocket's on-board software 
+                (ARM microcontrollers, custom OS & electronics).
+                <br />• Coordinated the software team (6 people).
+                <br />• 2 launch campaigns, ~1km apogee reached.
             </p>
             <!-- <p class="subDetails noprint">Team Management, Embedded Development, Real-time OS, Microcontrollers, C++</p> -->
           </p>
             </article>
 
             <article>
-              <h2>Embedded Software Intern <i class="fas fa-satellite noprint"></i></h2>
-              <h3>OHB Italia</h3>
-              <p class="subDetails">March 218 - August 2018</p>
+              <h2>Compiler Engineer<i class="fas fa-microscope noprint"></i></h2>
+              <h3><a href="https://rev.ng/">rev.ng</a></h3>
+              <p class="subDetails">September 2020 - Present</p>
               <p>
-                • Satellite software testing and validation (MWI - Microwave Imager)
-                <br />• Firmware development for the RF interference mitigation
-                module
+                • Developed an LLVM Pass that is able to recognize
+                and emit semantically rich types when decompiling.<br>
+                • Prototyped a symbolic execution module.
               </p>
-              <!-- <p class="subDetails noprint">SPARC, C, IBM Rational, IBM Doors, Cantata, MISRA</p> -->
+              <!-- <p class="subDetails noprint">Binary Analysis, Compilers, LLVM, C++</p> -->
             </p>
             </article>
 
-            <article>
+            <!-- <article>
+              <h2> Backend Developer <i class="far fa-window-restore noprint"></i></h2>
+              <h3><a href="https://www.blinklastmile.com/">blink</a></h3>
+              <p class="subDetails">April 2020 - June 2020</p>
+              <p>
+                • Helped setting up the software infrastructure of an early stage startup (AWS, nginx, PostgreSQL etc.)<br>
+                • Designed and developed backend components (Django)
+              </p>
+              <!-- <p class="subDetails noprint">Django, Selenium, AWS, nginx, devops</p>
+            </p>
+            </article> -->
+
+            <!-- <article>
               <h2>Startup Co-Founder <i class="fab fa-facebook noprint"></i></h2>
               <h3>Woofun</h3>
               <p class="subDetails">March 2012 - March 2013</p>
@@ -160,9 +212,9 @@
                 • Presented the
                 app at the ERStartup event (April 2012)
               </p>
-              <!-- <p class="subDetails noprint">Facebook Apps, REST APIs, Javascript</p> -->
+              <!-- <p class="subDetails noprint">Facebook Apps, REST APIs, Javascript</p> 
             </p>
-            </article>
+            </article> -->
           </div>
           <div class="clear"></div>
         </section>
@@ -176,9 +228,9 @@
             <div class="keySkills">
               <h3>Soft Skills</h3>
               <ul>
-                <li>Team Working</li>
+                <li>Team Organization</li>
                 <li>Problem Solving</li>
-                <li>Analytical Skills</li>
+                <li>Tight Schedule Management</li>
               </ul>
             </div>
 
@@ -196,11 +248,11 @@
             <div class="keySkills">
               <h3>Technologies</h3>
               <ul>
-                <li>Git</li>
                 <li>LLVM</li>
-                <li>Django</li>
                 <li>Keras</li>
-                <li>STM32</li>
+                <li>Git</li>
+                <li>Django</li>
+                <li>Microcontrollers</li>
               </ul>
             </div>
 
@@ -217,67 +269,13 @@
           <div class="clear"></div>
         </section>
 
-        <section>
-          <div class="sectionTitle">
-            <h1>Education</h1>
-          </div>
-
-          <div class="sectionContent">
-            <article>
-              <h2>MSc in Computer Science and Engineering</h2>
-              <h3>Politecnico di Milano, Milano, Italy</h3>
-              <p class="subDetails">September 2018 - Ongoing</p>
-              <p>
-                Embedded Systems, IoT, Computer Architectures and Compilers.
-              </p>
-            </article>
-
-            <article>
-              <h2>Exchange Program</h2>
-              <h3>CY Tech, Cergy, France</h3>
-              <p class="subDetails">September 2019 - January 2020</p>
-              <p>Exchange Program focused on Data Analysis and Machine Learning.</p>
-            </article>
-
-            <article>
-              <h2>BSc in Engineering of Computer Science</h2>
-              <h3>Politecnico di Milano, Milano, Italy</h3>
-              <p class="subDetails">September 2013 - July 2018</p>
-              <p>
-                Enrolled for the first two years in the Electronics Engineering
-                course.
-              </p>
-            </article>
-
-            <!-- <article>
-              <h2>High School Exchange Program</h2>
-              <h3>Palm Beach Currumbin, Brisbane, Australia</h3>
-              <p class="subDetails">July 2012 - December 2012</p>
-              <p>
-                Six months Exchange Program in Australia during High School.
-              </p>
-            </article> -->
-          </div>
-          <div class="clear"></div>
-        </section>
-
-        <section class="noprint">
+        <section class="">
           <div class="sectionTitle">
             <h1>Projects</h1>
           </div>
 
           <div class="sectionContent">
-            <article>
-              <h3>
-                <a href="https://beyondcommonideas.org">Beyond Commond Ideas</a>
-              </h3>
-              <p>
-                BCI is a collective of artists, developers and djs from Bologna
-                born in 2011. Troughout the years we have realized many hardware
-                and software projects, ranging from interactive light shows to
-                projection mapping installations.
-              </p>
-            </article>
+
 
             <!-- <article>
               <h3>blinkmilano.com</h3>
@@ -305,7 +303,7 @@
               <h3><a href="https://github.com/AlviseDeFaveri/smart-citofono">
                 Smart Interphone</a></h3>
               <p>
-                IoT device to be plugged into the interphone, realized with Contiki and MQTT.
+                An IoT device to be plugged into the interphone, realized with Contiki and MQTT.
               </p>
             </article>
 
@@ -313,7 +311,20 @@
               <h3><a href="https://github.com/AlviseDeFaveri/XAI-paper/blob/master/main.pdf">
                 Paper on Explainable AI</a></h3>
               <p>
-                Phylosophical paper on some possible limits of Explainable AI.
+                An article about the complexity and possible risks of 
+                designing and evaluating Explainable AI interfaces.
+              </p>
+            </article>
+            
+            <article>
+              <h3>
+                <a href="https://beyondcommonideas.org">Beyond Common Ideas</a>
+              </h3>
+              <p>
+                BCI is a collective of artists, developers, djs and vjs
+                born in 2011. I developed many of our hardware
+                and software projects, ranging from interactive light shows to
+                projection mapping installations.
               </p>
             </article>
 
